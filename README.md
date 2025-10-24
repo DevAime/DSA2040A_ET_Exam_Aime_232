@@ -10,7 +10,6 @@
 
 ##  Dashboard Preview
 
-![Airbnb NYC Analytics Dashboard](screenshots/dashboard_home.png)
 
 <img width="1907" height="657" alt="Screenshot 2025-10-24 160834" src="https://github.com/user-attachments/assets/7a6d3dbd-542e-4b84-911a-b3879731d771" />
 
@@ -128,27 +127,27 @@ The project handles a realistically-sized dataset (31,995+ rows) and showcases i
 
 #### **Category 2: CLEANING (5 transformations)**
 
-1. ✅ **Price Missing Values**
+1.  **Price Missing Values**
    - **Strategy:** Median imputation grouped by `room_type` and `neighbourhood`
    - **Rationale:** Prices vary significantly by location and property type
    - **Before:** 14,463 missing | **After:** 0 missing
 
-2. ✅ **Reviews Per Month Missing Values**
+2.  **Reviews Per Month Missing Values**
    - **Strategy:** Filled with 0
    - **Rationale:** Null means never reviewed = 0 reviews/month
    - **Before:** 11,188 missing | **After:** 0 missing
 
-3. ✅ **Last Review Missing Values**
+3.  **Last Review Missing Values**
    - **Strategy:** Created `has_been_reviewed` flag, kept dates as NaT
    - **Rationale:** Preserves "never reviewed" status while enabling analysis
    - **Before:** 11,188 missing | **After:** 11,188 NaT (but flagged)
 
-4. ✅ **Host Name Missing Values**
+4.  **Host Name Missing Values**
    - **Strategy:** Filled with "Unknown Host"
    - **Rationale:** Minimal impact (3.6%), maintains completeness
    - **Before:** 1,163 missing | **After:** 0 missing
 
-5. ✅ **Listing Name Missing Values**
+5.  **Listing Name Missing Values**
    - **Strategy:** Filled with "Listing {id}"
    - **Rationale:** Only 2 records, used ID as placeholder
    - **Before:** 2 missing | **After:** 0 missing
@@ -223,26 +222,22 @@ The project handles a realistically-sized dataset (31,995+ rows) and showcases i
 
 **Objective:** Provide interactive data exploration and visualization through a web-based dashboard.
 
-![Dashboard Overview](screenshots/dashboard_home.png)
-<img width="1919" height="905" alt="Screenshot 2025-10-24 155516" src="https://github.com/user-attachments/assets/867d58da-d303-4e44-83e5-8bc31ad028c5" />
-
+<img width="1907" alt="Dashboard Overview" src="https://github.com/user-attachments/assets/7a6d3dbd-542e-4b84-911a-b3879731d771" />
 
 #### Dashboard Features:
-- 📊 **Interactive Data Explorer:** Browse and filter the transformed dataset
-- 📈 **Real-time Visualizations:** Dynamic charts and graphs
-- 🗺️ **Geographic Analysis:** Location-based insights
-- 💰 **Price Analytics:** Price distribution and trends by various dimensions
-- 🏠 **Room Type Analysis:** Comparative insights across property types
-- 📝 **Review Metrics:** Engagement and activity analytics
-- 🎯 **Custom Filters:** Filter data by neighborhood, price range, room type, etc.
+-  **Interactive Data Explorer:** Browse and filter the transformed dataset
+-  **Real-time Visualizations:** Dynamic charts and graphs
+-  **Geographic Analysis:** Location-based insights
+-  **Price Analytics:** Price distribution and trends by various dimensions
+-  **Room Type Analysis:** Comparative insights across property types
+-  **Review Metrics:** Engagement and activity analytics
+-  **Custom Filters:** Filter data by neighborhood, price range, room type, etc.
 
 #### Dashboard Sections:
 
 **1. Geographic Analysis**
 
-![Geographic Distribution](screenshots/geographic_analysis.png)
-
-<img width="1919" height="897" alt="Screenshot 2025-10-24 155631" src="https://github.com/user-attachments/assets/6c19c86a-2455-4508-b843-c32ef46c3e2c" />
+<img width="1919" alt="Geographic Distribution" src="https://github.com/user-attachments/assets/867d58da-d303-4e44-83e5-8bc31ad028c5" />
 
 
 Explore listings across NYC with:
@@ -251,8 +246,7 @@ Explore listings across NYC with:
 - Room type breakdown by location
 
 **2. Pricing Insights**
-<img width="1907" alt="Airbnb NYC Analytics Dashboard" src="https://github.com/user-attachments/assets/7a6d3dbd-542e-4b84-911a-b3879731d771" />
-
+<img width="1919" alt="Pricing Analysis" src="https://github.com/user-attachments/assets/6c19c86a-2455-4508-b843-c32ef46c3e2c" />
 
 Comprehensive pricing analytics including:
 - Overall price distribution histogram
@@ -268,7 +262,7 @@ Comprehensive pricing analytics including:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ET_Exam_[FirstName]_[ID3]/
@@ -288,15 +282,15 @@ ET_Exam_[FirstName]_[ID3]/
 │   ├── host_experience_distribution.png  # Visualization: Host experience
 │   └── availability_category_distribution.png # Visualization: Availability
 │
-├── screenshots/                          # Dashboard screenshots ✨ NEW!
+├── screenshots/                          # Dashboard screenshots  NEW!
 │   ├── dashboard_home.png                # KPIs and overview
 │   ├── geographic_analysis.png           # Map and borough distribution
 │   └── pricing_insights.png              # Price analysis charts
 │
 ├── etl_extract.ipynb                     # Extraction phase notebook
 ├── etl_transform.ipynb                   # Transformation phase notebook
-├── dashboardapp.py                       # Streamlit dashboard application ✨ NEW!
-├── requirements.txt                      # Python dependencies ✨ NEW!
+├── dashboardapp.py                       # Streamlit dashboard application
+├── requirements.txt                      # Python dependencies
 ├── README.md                             # Project documentation (this file)
 └── .gitignore                            # Git ignore file
 ```
@@ -352,7 +346,7 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
    - Review transformations and visualizations
    - Verify output files in `transformed/` folder
 
-6. **Launch Interactive Dashboard** ✨ NEW!
+6. **Launch Interactive Dashboard**
    ```bash
    streamlit run dashboardapp.py
    ```
@@ -372,7 +366,7 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 
 ### 1. Data Profiling (Extract Phase)
 ```
-✓ Validated data loaded successfully
+ Validated data loaded successfully
   - Shape: 31,995 rows × 18 columns
   - Memory usage: 4.37 MB
 ```
@@ -386,7 +380,7 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 
 ### 3. Transformation Summary
 ```
-📊 TRANSFORMATION STATISTICS:
+ TRANSFORMATION STATISTICS:
    Original columns: 18
    Columns dropped: 1 (license)
    Columns added: 8
@@ -401,7 +395,7 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 
 ---
 
-## 📊 Visualizations & Insights
+##  Visualizations & Insights
 
 ### Transformation Phase Visualizations
 
@@ -413,7 +407,7 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 
 ---
 
-### Interactive Dashboard Screenshots ✨
+### Interactive Dashboard Screenshots
 
 #### Dashboard Home - Key Performance Indicators
 ![Dashboard KPIs](screenshots/dashboard_home.png)
@@ -426,21 +420,21 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 
 ---
 
-## 💡 Key Dashboard Features
+##  Key Dashboard Features
 
 The Streamlit dashboard provides comprehensive analytics across multiple dimensions:
 
-- **🏠 Real-time Filtering:** Dynamic filters for neighborhood, room type, price range, and host experience
-- **📍 Geographic Visualization:** Interactive map showing listing distribution by price category across NYC
-- **💰 Pricing Analytics:** Price distribution histograms and box plots by room type
-- **⭐ Review Intelligence:** Activity levels and engagement metrics across property types
-- **👥 Host Analytics:** Experience level distribution and multi-property host identification
-- **📊 Market Trends:** Borough-level and neighborhood-level performance comparisons
-- **📥 Data Export:** Download filtered datasets for further analysis
+- ** Real-time Filtering:** Dynamic filters for neighborhood, room type, price range, and host experience
+- ** Geographic Visualization:** Interactive map showing listing distribution by price category across NYC
+- ** Pricing Analytics:** Price distribution histograms and box plots by room type
+- ** Review Intelligence:** Activity levels and engagement metrics across property types
+- ** Host Analytics:** Experience level distribution and multi-property host identification
+- ** Market Trends:** Borough-level and neighborhood-level performance comparisons
+- ** Data Export:** Download filtered datasets for further analysis
 
 ---
 
-## 🎯 Key Insights & Business Value
+##  Key Insights & Business Value
 
 ### Data Quality Improvements
 1. **Completeness:** Increased from 54.8% to 96.7% through intelligent imputation
@@ -459,26 +453,28 @@ The Streamlit dashboard provides comprehensive analytics across multiple dimensi
 - **Search Ranking:** Prioritize listings with high review activity and recent reviews
 - **Market Analysis:** Analyze trends by neighborhood, room type, and price tier
 - **Predictive Modeling:** Clean, feature-rich dataset ready for ML applications
-- **Interactive Exploration:** Stakeholders can explore data without technical skills ✨ NEW!
+- **Interactive Exploration:** Stakeholders can explore data without technical skills
 
 ---
 
-## 📚 Lessons Learned
+##  Lessons Learned
 
 1. **Context-Aware Imputation:** Imputing price by room type and neighborhood yields more accurate results than simple mean/median
 2. **Data Merging Strategy:** Understanding data relationships (overlapping vs. new records) is crucial for correct merge logic
 3. **Feature Engineering Impact:** Derived columns often provide more value than raw data for business intelligence
 4. **Outlier Handling:** Not all outliers are errors—domain knowledge is essential for proper treatment
 5. **Reproducibility:** Well-documented, sequential notebooks enable others to replicate and validate results
-6. **Interactive Dashboards:** Non-technical stakeholders benefit greatly from interactive visualization tools ✨ NEW!
+6. **Interactive Dashboards:** Non-technical stakeholders benefit greatly from interactive visualization tools
 
 ---
 
 
-## 👨‍💻 Author
+##  Author
 
 Aime Muganga
+
 Course: DSA 2040A - Data Warehousing & Mining   
+
 Email: aimmug200507@gmail.com
 
 ---
