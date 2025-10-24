@@ -8,12 +8,6 @@
 
 ---
 
-##  Dashboard Preview
-
-
-<img width="1907" height="657" alt="Screenshot 2025-10-24 160834" src="https://github.com/user-attachments/assets/7a6d3dbd-542e-4b84-911a-b3879731d771" />
-
----
 
 ##  Project Overview
 
@@ -28,6 +22,13 @@ The project handles a realistically-sized dataset (31,995+ rows) and showcases i
 - Feature engineering and enrichment
 - Data type standardization and formatting
 - Interactive dashboard for data visualization and analysis
+
+---
+
+##  Dashboard Preview
+
+
+<img width="1907" height="657" alt="Screenshot 2025-10-24 160834" src="https://github.com/user-attachments/assets/7a6d3dbd-542e-4b84-911a-b3879731d771" />
 
 ---
 
@@ -297,11 +298,11 @@ ET_Exam_[FirstName]_[ID3]/
 
 ---
 
-## 🚀 Steps to Run the Project
+##  Steps to Run the Project
 
 ### Prerequisites
 
-#### Option 1: Install from requirements.txt (Recommended) ✨ NEW!
+#### Option 1: Install from requirements.txt (Recommended)  NEW!
 ```bash
 # Install all required packages at once
 pip install -r requirements.txt
@@ -362,7 +363,7 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 
 ---
 
-## 📸 Sample Outputs / Screenshots
+##  Sample Outputs / Screenshots
 
 ### 1. Data Profiling (Extract Phase)
 ```
@@ -405,18 +406,6 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 #### Review Activity Distribution by Room Type
 ![Review Activity by Room Type](transformed/review_activity_by_roomtype.png)
 
----
-
-### Interactive Dashboard Screenshots
-
-#### Dashboard Home - Key Performance Indicators
-![Dashboard KPIs](screenshots/dashboard_home.png)
-
-#### Geographic Analysis - Listings Map & Borough Distribution
-![Geographic Analysis](screenshots/geographic_analysis.png)
-
-#### Pricing Insights - Distribution & Room Type Comparison
-![Pricing Insights](screenshots/pricing_insights.png)
 
 ---
 
@@ -424,13 +413,13 @@ pip install pandas numpy matplotlib seaborn jupyter streamlit plotly
 
 The Streamlit dashboard provides comprehensive analytics across multiple dimensions:
 
-- ** Real-time Filtering:** Dynamic filters for neighborhood, room type, price range, and host experience
-- ** Geographic Visualization:** Interactive map showing listing distribution by price category across NYC
-- ** Pricing Analytics:** Price distribution histograms and box plots by room type
-- ** Review Intelligence:** Activity levels and engagement metrics across property types
-- ** Host Analytics:** Experience level distribution and multi-property host identification
-- ** Market Trends:** Borough-level and neighborhood-level performance comparisons
-- ** Data Export:** Download filtered datasets for further analysis
+- **Real-time Filtering:** Dynamic filters for neighborhood, room type, price range, and host experience
+- **Geographic Visualization:** Interactive map showing listing distribution by price category across NYC
+- **Pricing Analytics:** Price distribution histograms and box plots by room type
+- **Review Intelligence:** Activity levels and engagement metrics across property types
+- **Host Analytics:** Experience level distribution and multi-property host identification
+- **Market Trends:** Borough-level and neighborhood-level performance comparisons
+- **Data Export:** Download filtered datasets for further analysis
 
 ---
 
