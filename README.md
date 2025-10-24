@@ -4,13 +4,15 @@
 **Instructor:** Austin Odera  
 **Student:** Aime Muganga  
 **Student ID:** 670232
-**Date:** October 2025
+**Date:** 23 October 2025
 
 ---
 
 ##  Dashboard Preview
 
 ![Airbnb NYC Analytics Dashboard](screenshots/dashboard_home.png)
+
+<img width="1907" height="657" alt="Screenshot 2025-10-24 160834" src="https://github.com/user-attachments/assets/7a6d3dbd-542e-4b84-911a-b3879731d771" />
 
 ---
 
@@ -222,6 +224,8 @@ The project handles a realistically-sized dataset (31,995+ rows) and showcases i
 **Objective:** Provide interactive data exploration and visualization through a web-based dashboard.
 
 ![Dashboard Overview](screenshots/dashboard_home.png)
+<img width="1919" height="905" alt="Screenshot 2025-10-24 155516" src="https://github.com/user-attachments/assets/867d58da-d303-4e44-83e5-8bc31ad028c5" />
+
 
 #### Dashboard Features:
 - 📊 **Interactive Data Explorer:** Browse and filter the transformed dataset
@@ -235,7 +239,11 @@ The project handles a realistically-sized dataset (31,995+ rows) and showcases i
 #### Dashboard Sections:
 
 **1. Geographic Analysis**
+
 ![Geographic Distribution](screenshots/geographic_analysis.png)
+
+<img width="1919" height="897" alt="Screenshot 2025-10-24 155631" src="https://github.com/user-attachments/assets/6c19c86a-2455-4508-b843-c32ef46c3e2c" />
+
 
 Explore listings across NYC with:
 - Interactive map colored by price category
@@ -243,7 +251,8 @@ Explore listings across NYC with:
 - Room type breakdown by location
 
 **2. Pricing Insights**
-![Pricing Analysis](screenshots/pricing_insights.png)
+<img width="1907" alt="Airbnb NYC Analytics Dashboard" src="https://github.com/user-attachments/assets/7a6d3dbd-542e-4b84-911a-b3879731d771" />
+
 
 Comprehensive pricing analytics including:
 - Overall price distribution histogram
